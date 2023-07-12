@@ -151,6 +151,7 @@ object Form6: TForm6
     TitleFont.Style = []
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 776
     Top = 152
   end
@@ -158,11 +159,20 @@ object Form6: TForm6
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Port = 0
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualreni'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'D:\visual2_semester4\UAS_Reni\libmysql.dll'
     Left = 776
     Top = 48
   end
   object zqry1: TZQuery
+    Connection = con1
+    SQL.Strings = (
+      'SELECT *FROM tb_kelas')
     Params = <>
     Left = 776
     Top = 96
