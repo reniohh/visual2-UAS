@@ -204,16 +204,29 @@ object Form9: TForm9
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Port = 0
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualreni'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'D:\visual2_semester4\UAS_Reni\libmysql.dll'
     Left = 864
     Top = 96
   end
   object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM tb_riwayatpoint')
     Params = <>
+    Properties.Strings = (
+      '')
     Left = 864
     Top = 160
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 864
     Top = 224
   end
