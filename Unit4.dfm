@@ -342,4 +342,33 @@ object Form4: TForm4
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
   end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'controls_cp=GET_ACP')
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualreni'
+    User = 'root'
+    Protocol = 'mysqld-5'
+    LibraryLocation = 'D:\visual2_semester4\UAS_Reni\libmysql.dll'
+    Left = 808
+    Top = 56
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    SQL.Strings = (
+      'SELECT * FROM tb_siswa')
+    Params = <>
+    Left = 808
+    Top = 112
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 808
+    Top = 168
+  end
 end
