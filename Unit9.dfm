@@ -1,6 +1,6 @@
 object Form9: TForm9
-  Left = 343
-  Top = 293
+  Left = 289
+  Top = 158
   Width = 928
   Height = 479
   Caption = 'Riwayat Poin'
@@ -199,5 +199,22 @@ object Form9: TForm9
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Port = 0
+    Left = 864
+    Top = 96
+  end
+  object zqry1: TZQuery
+    Params = <>
+    Left = 864
+    Top = 160
+  end
+  object ds1: TDataSource
+    Left = 864
+    Top = 224
   end
 end

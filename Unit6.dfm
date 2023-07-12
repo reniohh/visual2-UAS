@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 399
-  Top = 303
+  Left = 267
+  Top = 141
   Width = 928
   Height = 480
   Caption = 'KELAS'
@@ -149,5 +149,22 @@ object Form6: TForm6
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object ds1: TDataSource
+    Left = 776
+    Top = 152
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Port = 0
+    Left = 776
+    Top = 48
+  end
+  object zqry1: TZQuery
+    Params = <>
+    Left = 776
+    Top = 96
   end
 end

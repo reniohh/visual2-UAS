@@ -1,6 +1,6 @@
 object Form4: TForm4
-  Left = 416
-  Top = 257
+  Left = 213
+  Top = 144
   Width = 928
   Height = 480
   Caption = 'SISWA'

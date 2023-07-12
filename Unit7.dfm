@@ -1,6 +1,6 @@
 object Form7: TForm7
-  Left = 483
-  Top = 210
+  Left = 285
+  Top = 141
   Width = 928
   Height = 480
   Caption = 'WALI KELAS'
@@ -202,5 +202,25 @@ object Form7: TForm7
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    HostName = 'localhost'
+    Port = 0
+    Database = 'visualreni'
+    LibraryLocation = 'D:\visual2_semester4\UAS_Reni\libmysql.dll'
+    Left = 760
+    Top = 64
+  end
+  object zqry1: TZQuery
+    Params = <>
+    Left = 768
+    Top = 120
+  end
+  object ds1: TDataSource
+    Left = 776
+    Top = 184
   end
 end

@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 380
-  Top = 246
+  Left = 205
+  Top = 159
   Width = 928
   Height = 480
   Caption = 'Hubungan'
@@ -169,5 +169,22 @@ object Form5: TForm5
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Port = 0
+    Left = 816
+    Top = 64
+  end
+  object zqry1: TZQuery
+    Params = <>
+    Left = 816
+    Top = 120
+  end
+  object ds1: TDataSource
+    Left = 816
+    Top = 192
   end
 end

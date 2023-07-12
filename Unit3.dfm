@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 409
-  Top = 243
+  Left = 268
+  Top = 161
   Width = 928
   Height = 480
   Caption = ' ORTU'
@@ -275,5 +275,30 @@ object Form3: TForm3
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualreni'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'D:\visual2_semester4\UAS_Reni\libmysql.dll'
+    Left = 816
+    Top = 56
+  end
+  object zqry1: TZQuery
+    Connection = con1
+    SQL.Strings = (
+      'SELECT * FROM tb_ortu')
+    Params = <>
+    Left = 816
+    Top = 120
+  end
+  object ds1: TDataSource
+    DataSet = zqry1
+    Left = 816
+    Top = 184
   end
 end

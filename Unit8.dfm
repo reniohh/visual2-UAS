@@ -1,6 +1,6 @@
 object Form8: TForm8
-  Left = 353
-  Top = 342
+  Left = 241
+  Top = 187
   Width = 928
   Height = 480
   Caption = 'POIN'
@@ -169,5 +169,22 @@ object Form8: TForm8
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+  end
+  object ds1: TDataSource
+    Left = 760
+    Top = 160
+  end
+  object con1: TZConnection
+    ControlsCodePage = cGET_ACP
+    UTF8StringsAsWideField = False
+    AutoEncodeStrings = False
+    Port = 0
+    Left = 760
+    Top = 40
+  end
+  object zqry1: TZQuery
+    Params = <>
+    Left = 760
+    Top = 96
   end
 end
