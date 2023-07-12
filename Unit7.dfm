@@ -207,19 +207,27 @@ object Form7: TForm7
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
+    Connected = True
     HostName = 'localhost'
-    Port = 0
+    Port = 3306
     Database = 'visualreni'
+    User = 'root'
+    Protocol = 'mysql-5'
     LibraryLocation = 'D:\visual2_semester4\UAS_Reni\libmysql.dll'
     Left = 760
     Top = 64
   end
   object zqry1: TZQuery
+    Connection = con1
+    Active = True
+    SQL.Strings = (
+      'SELECT *FROM tb_walikelas')
     Params = <>
     Left = 768
     Top = 120
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 776
     Top = 184
   end
