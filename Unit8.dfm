@@ -171,6 +171,7 @@ object Form8: TForm8
     TitleFont.Style = []
   end
   object ds1: TDataSource
+    DataSet = zqry1
     Left = 760
     Top = 160
   end
@@ -178,11 +179,20 @@ object Form8: TForm8
     ControlsCodePage = cGET_ACP
     UTF8StringsAsWideField = False
     AutoEncodeStrings = False
-    Port = 0
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'visualreni'
+    User = 'root'
+    Protocol = 'mysqld-5'
+    LibraryLocation = 'D:\visual2_semester4\UAS_Reni\libmysql.dll'
     Left = 760
     Top = 40
   end
   object zqry1: TZQuery
+    Connection = con1
+    SQL.Strings = (
+      'SELECT *FROM tb_poin')
     Params = <>
     Left = 760
     Top = 96
